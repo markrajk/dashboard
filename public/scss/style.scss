@@ -71,7 +71,7 @@ a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.3rem 0rem;
+    padding: 1rem 0rem;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.33;
@@ -275,12 +275,14 @@ a:focus {
         }
 
         & .logo img {
+            margin-bottom: .7rem;
             width: 3.9rem;
             height: 3.9rem;
         }
 
 
         & .letter-circle {
+            margin-top: .8rem;
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -349,7 +351,7 @@ a:focus {
         }
 
         &-list {
-            margin-top: 1.6rem;
+            margin-top: 1.2rem;
             padding: 0 1.2rem;
 
             &-item {
@@ -496,7 +498,7 @@ a:focus {
         margin-top: 1.8rem;
 
         & > *:not(:first-child) {
-            margin-left: 1.8rem;
+            margin-left: 1.4rem;
         }
 
         & .choose {
@@ -513,12 +515,12 @@ a:focus {
                 }
 
                 &:first-child {
-                    margin-right: 3.3rem;
+                    margin-right: 3.5rem;
                 }
 
                 & i {
                     margin-top: -.1rem;
-                    margin-right: .5rem;
+                    margin-right: .8rem;
                     font-size: 1.8rem;
                 }
             }
@@ -528,7 +530,7 @@ a:focus {
 
         & .dropdown-toggle {
             font-size: 1.3rem;
-            padding: .5rem 1.25rem;
+            padding: .5rem 2rem;
             border-radius: 16px;
         }
 
@@ -624,7 +626,6 @@ a:focus {
                 h3 {
                     margin: 0;
                     padding: 0;
-                    width: 155px;
                     opacity: 0.96;
                     font-size: 2.1rem;
                     font-weight: 500;
@@ -636,6 +637,7 @@ a:focus {
 
             &-body {
                 padding: 2.2rem 1.7rem;
+                padding-right: 2.8rem;
                 height: calc(100% - 4.6rem);
             }
         }
@@ -646,14 +648,15 @@ a:focus {
 
 
 .table {
-    max-width: 76rem;
+    max-width: 72rem;
     margin: 0;
     height: 100%;
-    padding: 0 3.2rem;
+    padding: 0 3rem;
     padding-right: 0;
 
     &-header {
-        padding: 3rem 0;
+        padding: 2.8rem 0;
+        padding-bottom: 2.2rem;
 
         & h3 {
             opacity: 0.96;
@@ -678,10 +681,10 @@ a:focus {
     }
 
     &-row {
-        padding: .6rem 0;
+        padding: .65rem 0;
         display: grid;
         align-items: center;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(4, auto) 3rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #354052;
@@ -695,7 +698,7 @@ a:focus {
             }
     
             &-name {
-                margin-left: 1.4rem;
+                margin-left: 1.2rem;
                 color: #171C24;
                 font-weight: 500;
 
@@ -703,6 +706,10 @@ a:focus {
                 &:focus {
                     color: #171C24;
                 }
+            }
+
+            & .btn-custom-table {
+                justify-self: center;
             }
 
             &-arrow {
@@ -714,6 +721,7 @@ a:focus {
                     color: #b3bac4;
                 }
             }
+
 
         
         }

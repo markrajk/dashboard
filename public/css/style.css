@@ -36,7 +36,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.3rem 0rem;
+  padding: 1rem 0rem;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.33;
@@ -167,9 +167,11 @@ a:focus {
       font-size: 2rem;
       color: #9BA6B2; }
     .sidebar-main .logo img {
+      margin-bottom: .7rem;
       width: 3.9rem;
       height: 3.9rem; }
     .sidebar-main .letter-circle {
+      margin-top: .8rem;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -219,7 +221,7 @@ a:focus {
         font-size: 1.5rem;
         color: #9699a6; }
     .sidebar-menu-list {
-      margin-top: 1.6rem;
+      margin-top: 1.2rem;
       padding: 0 1.2rem; }
       .sidebar-menu-list-item {
         padding: .2rem 0;
@@ -316,7 +318,7 @@ a:focus {
     align-items: center;
     margin-top: 1.8rem; }
     .header-bottom > *:not(:first-child) {
-      margin-left: 1.8rem; }
+      margin-left: 1.4rem; }
     .header-bottom .choose {
       margin-right: auto; }
       .header-bottom .choose a {
@@ -328,14 +330,14 @@ a:focus {
         .header-bottom .choose a.active {
           font-weight: 700; }
         .header-bottom .choose a:first-child {
-          margin-right: 3.3rem; }
+          margin-right: 3.5rem; }
         .header-bottom .choose a i {
           margin-top: -.1rem;
-          margin-right: .5rem;
+          margin-right: .8rem;
           font-size: 1.8rem; }
     .header-bottom .dropdown-toggle {
       font-size: 1.3rem;
-      padding: .5rem 1.25rem;
+      padding: .5rem 2rem;
       border-radius: 16px; }
     .header-bottom .dropdown-menu {
       font-size: 1.2rem; }
@@ -393,7 +395,6 @@ a:focus {
       .main .graph-card-header h3 {
         margin: 0;
         padding: 0;
-        width: 155px;
         opacity: 0.96;
         font-size: 2.1rem;
         font-weight: 500;
@@ -402,16 +403,18 @@ a:focus {
         color: #1c1c1c; }
     .main .graph-card-body {
       padding: 2.2rem 1.7rem;
+      padding-right: 2.8rem;
       height: calc(100% - 4.6rem); }
 
 .table {
-  max-width: 76rem;
+  max-width: 72rem;
   margin: 0;
   height: 100%;
-  padding: 0 3.2rem;
+  padding: 0 3rem;
   padding-right: 0; }
   .table-header {
-    padding: 3rem 0; }
+    padding: 2.8rem 0;
+    padding-bottom: 2.2rem; }
     .table-header h3 {
       opacity: 0.96;
       font-size: 2.1rem;
@@ -431,10 +434,10 @@ a:focus {
       width: 0;
       height: 0; }
   .table-row {
-    padding: .6rem 0;
+    padding: .65rem 0;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto) 3rem;
     font-size: 1.2rem;
     line-height: 1.33;
     color: #354052;
@@ -444,11 +447,13 @@ a:focus {
       height: 3.3rem;
       border-radius: 50%; }
     .table-row-item-name {
-      margin-left: 1.4rem;
+      margin-left: 1.2rem;
       color: #171C24;
       font-weight: 500; }
       .table-row-item-name:hover, .table-row-item-name:focus {
         color: #171C24; }
+    .table-row-item .btn-custom-table {
+      justify-self: center; }
     .table-row-item-arrow {
       font-size: 2rem;
       color: #b3bac4; }
