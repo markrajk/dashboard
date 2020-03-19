@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Main View</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <img src="./public/svg/sidenav-logo.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item active">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="fas fa-users"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="fas fa-question"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Create new team</a>
+                    <a href="#" class="btn-custom-white">
+                        Get the mobile app
+                        <i class="fab fa-google-play"></i>
+                        <i class="fab fa-apple"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <h1 class="header-top-title">Team Marketing</h1>
+                    <div class="header-top-info">
+                        <i class="fas fa-user-friends"></i>/<span>12</span>
+                    </div>
+                    <div class="header-top-info">
+                        <i class="fas fa-eye"></i>/<span>12</span>
+                    </div>
+                    <div class="header-top-info">
+                        <i class="fas fa-robot"></i>/<span>12</span>
+                    </div>
+                    <a href="#" class="header-top-btn"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <p class="header-small">
+                    We make great ads, campaigns and create a super brand.
+                </p>
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="#" class="active">
+                            <i class="fas fa-chart-bar"></i>
+                            Main view
+                        </a>
+
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            People view
+                        </a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Invite new
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <input class="input" type="text" placeholder="Search people...">
+                    
+                    <a href="#" class="header-bottom-icon">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#" class="header-bottom-icon">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                    <a href="#" class="header-bottom-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
+
+            </header>
+
+            <main class="main">
+                <div class="card-1">
+                    <div class="graph-card">
+                        <div class="graph-card-header d-flex justify-content-between">
+                            <h3 class="text-truncate mr-2">How people feel <br>in this team</h3>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="graph-card">
+                        <div class="graph-card-header d-flex justify-content-between">
+                            <h3 class="text-truncate mr-2">How people feel <br>in this team</h3>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3">
+                    <div class="graph-card">
+                        <div class="graph-card-header d-flex justify-content-between">
+                            <h3 class="text-truncate mr-2">How people feel <br>in this team</h3>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-4">
+                    <div class="table">
+                        <div class="table-header">
+                            <h3>How people are doing in this team</h3>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table green">Good</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table green">Good</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table green">Good</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table green">Good</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table green">Good</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table yellow">Ok</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table yellow">Ok</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table yellow">Ok</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table yellow">Ok</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table red">Bad</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table red">Bad</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table red">Bad</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-row-item">
+                                    <img src="./public/img/p-01.png" class="table-row-item-img" alt="users image">
+                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-prof">Software Architect</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="btn-custom-table red">Bad</a>
+                                </div>
+    
+                                <div class="table-row-item">
+                                    <a href="#" class="table-row-item-arrow"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+        <script src="./public/js/jquery-3.4.1.min.js"></script>
+        <script src="./public/js/bootstrap.bundle.js"></script>
+        <script src="./public/js/main.js"></script>
+</body>
+
+</html>
