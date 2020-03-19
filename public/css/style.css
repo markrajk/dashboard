@@ -378,7 +378,10 @@ a:focus {
     border-left: 1px solid #E1E1E1;
     border-right: 1px solid #E1E1E1; }
   .main .card-3 {
+    padding-left: 1.2rem;
     grid-area: card-3; }
+    .main .card-3 .graph-card-body {
+      padding-right: 1.8rem; }
   .main .card-4 {
     grid-area: card-4;
     border-top: 1px solid #E1E1E1;
@@ -388,7 +391,7 @@ a:focus {
     border-top: 1px solid #E1E1E1; }
   .main .graph-card {
     padding: 2.7rem;
-    padding-top: 2rem; }
+    padding-top: 1.8rem; }
     .main .graph-card-header {
       height: auto;
       padding: 0; }
@@ -437,7 +440,7 @@ a:focus {
     padding: .65rem 0;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4, auto) 3rem;
+    grid-template-columns: repeat(4, 1fr) 3.2rem;
     font-size: 1.2rem;
     line-height: 1.33;
     color: #354052;
@@ -453,7 +456,7 @@ a:focus {
       .table-row-item-name:hover, .table-row-item-name:focus {
         color: #171C24; }
     .table-row-item .btn-custom-table {
-      justify-self: center; }
+      margin: 0 auto; }
     .table-row-item-arrow {
       font-size: 2rem;
       color: #b3bac4; }

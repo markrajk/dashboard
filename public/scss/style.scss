@@ -602,7 +602,14 @@ a:focus {
         }
 
         & .card-3 {
+            padding-left: 1.2rem;
             grid-area: card-3;
+
+            & .graph-card {
+                &-body {
+                    padding-right: 1.8rem;
+                }
+            }
         }
 
         & .card-4 {
@@ -619,7 +626,7 @@ a:focus {
 
         & .graph-card {
             padding: 2.7rem;
-            padding-top: 2rem;
+            padding-top: 1.8rem;
             &-header {
                 height: auto;
                 padding: 0;
@@ -684,7 +691,7 @@ a:focus {
         padding: .65rem 0;
         display: grid;
         align-items: center;
-        grid-template-columns: repeat(4, auto) 3rem;
+        grid-template-columns: repeat(4, 1fr) 3.2rem;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #354052;
@@ -709,7 +716,7 @@ a:focus {
             }
 
             & .btn-custom-table {
-                justify-self: center;
+                margin: 0 auto;
             }
 
             &-arrow {
