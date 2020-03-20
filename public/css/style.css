@@ -422,6 +422,10 @@ a:focus {
       margin-right: 1rem;
       border: 1px solid #E3E3E3;
       border-radius: 18px; }
+      .header-top-info:first-of-type {
+        font-size: 1.3rem; }
+      .header-top-info:first-of-type + div i {
+        font-size: 1.3rem; }
     .header-top a {
       color: #333;
       font-size: .001rem;
