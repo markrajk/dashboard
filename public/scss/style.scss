@@ -124,11 +124,90 @@ a:focus {
 .sidebar-menu-close-icon-rotate {
     transform: rotateZ(180deg);
 }
+
+// icons
+@font-face {
+    font-family: 'customicons';
+    src:  url('../fonts/customicons.eot?b4owmd');
+    src:  url('../fonts/customicons.eot?b4owmd#iefix') format('embedded-opentype'),
+      url('../fonts/customicons.ttf?b4owmd') format('truetype'),
+      url('../fonts/customicons.woff?b4owmd') format('woff'),
+      url('../fonts/customicons.svg?b4owmd#customicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'customicons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-c-bars:before {
+    content: "\e900";
+  }
+  .icon-c-chevron-l:before {
+    content: "\e901";
+  }
+  .icon-c-document:before {
+    content: "\e902";
+  }
+  .icon-c-dots-h:before {
+    content: "\e903";
+  }
+  .icon-c-exit:before {
+    content: "\e904";
+  }
+  .icon-c-eye:before {
+    content: "\e905";
+  }
+  .icon-c-lines:before {
+    content: "\e906";
+  }
+  .icon-c-people:before {
+    content: "\e907";
+  }
+  .icon-c-phone:before {
+    content: "\e909";
+  }
+  .icon-c-plus-c:before {
+    content: "\e90a";
+  }
+  .icon-c-question:before {
+    content: "\e90b";
+  }
+  .icon-c-robot:before {
+    content: "\e90c";
+  }
+  .icon-c-search:before {
+    content: "\e90d";
+  }
+  .icon-c-settings:before {
+    content: "\e90e";
+  }
+  .icon-c-users:before {
+    content: "\e90f";
+  }
+  
+  
 // ==================================
 // UTILITIES END
 // ==================================
 
-
+.test-icon {
+    color: red;
+    font-size: 3rem;
+}
 
 // ==================================
 // LAYOUT START
@@ -217,6 +296,85 @@ a:focus {
       }
     }
   }
+
+  // table with header
+  .table {
+    max-width: 72rem;
+    margin: 0;
+    height: 100%;
+    padding: 0 3rem;
+    padding-right: 0;
+
+    &-header {
+        padding: 2.8rem 0;
+        padding-bottom: 2.2rem;
+
+        & h3 {
+            opacity: 0.96;
+            font-size: 2.1rem;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.21px;
+            color: #1c1c1c;
+        }
+    }
+
+    &-body {
+        max-height: calc(100% - 8.3rem);
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
+    }
+
+    &-row {
+        padding: .65rem 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr) 3.2rem;
+        font-size: 1.2rem;
+        line-height: 1.33;
+        color: #354052;
+        border-bottom: 1px solid rgba(#E1E1E1, .56);
+
+        &-item {
+            &-img {
+                width: 3.3rem;
+                height: 3.3rem;
+                border-radius: 50%;
+            }
+    
+            &-name {
+                margin-left: 1.2rem;
+                color: #171C24;
+                font-weight: 500;
+
+                &:hover,
+                &:focus {
+                    color: #171C24;
+                }
+            }
+
+            & .btn-custom-table {
+                margin: 0 auto;
+            }
+
+            &-arrow {
+                font-size: 2rem;
+                color: #b3bac4;
+
+                &:hover,
+                &:focus {
+                    color: #b3bac4;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -399,15 +557,13 @@ a:focus {
             & .btn-custom-white {
                 margin: 1.7rem;
 
-                & i:first-child {
-                    font-size: 2rem;
+                & .play-icon {
                     margin-left: 1.2rem;
                 }
 
-                & i:first-child + i {
+                & .apple-icon {
                     margin-bottom: .3rem;
-                    margin-left: .5rem;
-                    font-size: 2.2rem;
+                    margin-left: .3rem;
                 }
             }
         }
@@ -447,7 +603,7 @@ a:focus {
 // ==================================
 
 .header {
-    padding: 3.4rem 1.7rem 1.1rem 3.2rem;
+    padding: 3.4rem 1.7rem .5rem 3.2rem;
     font-size: 1.6rem;
     border-bottom: 1px solid #E1E1E1;
     
@@ -474,7 +630,7 @@ a:focus {
 
         & a {
             color: #333;
-            font-size: 2rem;
+            font-size: .001rem;
             margin-left: 1rem;
 
             &:hover,
@@ -495,13 +651,12 @@ a:focus {
     &-bottom {
         display: flex;
         align-items: center;
-        margin-top: 1.8rem;
-
-        & > *:not(:first-child) {
-            margin-left: 1.4rem;
-        }
+        margin-top: 1.3rem;
+        margin-right: -1.6rem;
 
         & .choose {
+            display: flex;
+            align-items: center;
             margin-right: auto;
             & a {
                 display: inline-flex;
@@ -515,17 +670,20 @@ a:focus {
                 }
 
                 &:first-child {
-                    margin-right: 3.5rem;
+                    margin-right: 3rem;
                 }
 
                 & i {
-                    margin-top: -.1rem;
                     margin-right: .8rem;
                     font-size: 1.8rem;
                 }
             }
 
             
+        }
+
+        & .dropdown {
+            margin-right: 1.2rem;
         }
 
         & .dropdown-toggle {
@@ -539,6 +697,7 @@ a:focus {
         }
 
         & .input {
+            margin-right: .5rem;
             padding: .6rem 1.6rem;
             outline: none;
             font-family: Roboto;
@@ -557,16 +716,34 @@ a:focus {
         }
 
         &-icon {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
             color: #333;
-            font-size: 2.5rem;
-            
-            &:not(:first-of-type) {
-                padding-left: 1.2rem;
+            //font-size: 2.5rem;
+        
+
+            &:first-of-type {
+                font-size: 2.3rem;
+            }
+
+            &:first-of-type + a {
+                font-size: 2.2rem;
+            }
+
+            &:first-of-type + a + a {
+                //margin-top: -.2rem;
+                font-size: 1rem;
             }
 
             &:hover,
             &:focus {
-                color: #777;
+                color: #333;
+                background-color: #f1f1f1;
             }
         }
     }
@@ -652,88 +829,6 @@ a:focus {
 // ==================================
 // TEAM MAIN VIEW END
 // ==================================
-
-
-.table {
-    max-width: 72rem;
-    margin: 0;
-    height: 100%;
-    padding: 0 3rem;
-    padding-right: 0;
-
-    &-header {
-        padding: 2.8rem 0;
-        padding-bottom: 2.2rem;
-
-        & h3 {
-            opacity: 0.96;
-            font-size: 2.1rem;
-            font-weight: 500;
-            line-height: 1.1;
-            letter-spacing: 0.21px;
-            color: #1c1c1c;
-        }
-    }
-
-    &-body {
-        max-height: calc(100% - 8.3rem);
-        overflow-y: scroll;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-
-        &::-webkit-scrollbar { /* WebKit */
-            width: 0;
-            height: 0;
-        }
-    }
-
-    &-row {
-        padding: .65rem 0;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(4, 1fr) 3.2rem;
-        font-size: 1.2rem;
-        line-height: 1.33;
-        color: #354052;
-        border-bottom: 1px solid rgba(#E1E1E1, .56);
-
-        &-item {
-            &-img {
-                width: 3.3rem;
-                height: 3.3rem;
-                border-radius: 50%;
-            }
-    
-            &-name {
-                margin-left: 1.2rem;
-                color: #171C24;
-                font-weight: 500;
-
-                &:hover,
-                &:focus {
-                    color: #171C24;
-                }
-            }
-
-            & .btn-custom-table {
-                margin: 0 auto;
-            }
-
-            &-arrow {
-                font-size: 2rem;
-                color: #b3bac4;
-
-                &:hover,
-                &:focus {
-                    color: #b3bac4;
-                }
-            }
-
-
-        
-        }
-    }
-}
 
 
 
