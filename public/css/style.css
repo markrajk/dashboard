@@ -549,6 +549,7 @@ a:focus {
       padding: .6rem 1.6rem;
       outline: none;
       font-family: Roboto;
+      font-weight: 400;
       font-size: 1.5rem;
       line-height: 1.33;
       letter-spacing: -0.12px;
@@ -658,6 +659,8 @@ a:focus {
       .teams-people-view .panel-body .table-header-fixed thead th i {
         margin-left: .6rem;
         transform: rotateZ(-90deg); }
+  .teams-people-view .panel-body .table-header-fixed tbody {
+    max-height: calc( 100vh - 11rem - 16rem - 8rem ); }
   .teams-people-view .panel-body .table-header-fixed tr {
     padding: 0 1.7rem; }
   .teams-people-view .panel-body .table-header-fixed tbody tr {
