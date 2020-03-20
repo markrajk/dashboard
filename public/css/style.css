@@ -68,14 +68,13 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.8rem;
-  height: 25px;
+  width: 5.7rem;
+  height: 2.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 0.5;
   letter-spacing: 0.24px;
   color: #fff;
-  background-color: red;
   border-radius: 3px; }
   .btn-custom-table:hover, .btn-custom-table:focus {
     color: #fff; }
@@ -157,6 +156,22 @@ a:focus {
 .icon-c-users:before {
   content: "\e90f"; }
 
+@font-face {
+  font-family: "HankRnd-Light";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Light.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Light.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Light.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Light.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Regular";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Regular.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Regular.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Regular.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Regular.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Bold";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Bold.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Bold.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Bold.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Bold.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Black";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Black.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Black.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Black.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Black.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Black.ttf") format("truetype"); }
 .test-icon {
   color: red;
   font-size: 3rem; }
@@ -211,13 +226,12 @@ a:focus {
         .graph-card-body .bar-fill-red {
           background: linear-gradient(#fa2020, #ef0049); }
       .graph-card-body .bar-info {
-        font-family: "Open Sans", sans-serif;
+        font-family: "HankRnd-Bold";
         position: absolute;
         white-space: nowrap;
         left: 50%;
         bottom: -1.1rem;
         font-size: 1.1rem;
-        font-weight: 600;
         color: rgba(23, 23, 23, 0.6);
         transform: translate(-50%, 100%); }
       @media (max-width: 1439px) {
