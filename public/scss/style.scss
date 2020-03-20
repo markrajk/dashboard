@@ -49,6 +49,11 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
     }
   }
 
+  @function resize($base,$value) {
+    $result: $base * $value;
+    @return $result;
+  }
+
 // ==================================
 // GENERAL SETTINGS 
 // ==================================
@@ -61,11 +66,28 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 }
 
 html {
+    width: 100%;
     //font-size: 62.5%;
     font-size: 67.5%;
 
     @include respond(desktop-xxl) {
         font-size: 62.5%;
+    }
+
+    @include respond(desktop-lg) {
+        font-size:59.5%;
+    }
+
+    @include respond(desktop-md) {
+        font-size:55%;
+    }
+
+    @include respond(desktop-sm) {
+        font-size:50%;
+    }
+
+    @include respond(desktop-xsm) {
+        font-size:45%;
     }
 }
 
@@ -110,7 +132,7 @@ a:focus {
     justify-content: center;
     align-items: center;
     padding: 1rem 0rem;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.33;
     letter-spacing: 0.3px;
@@ -153,6 +175,8 @@ a:focus {
     &.yellow {
         background: $yellow-gradient;
     }
+
+
 }
 // animation
 .sidebar-menu-close-anim {
@@ -440,11 +464,16 @@ a:focus {
             &-arrow {
                 font-size: 2rem;
                 color: #b3bac4;
+                
 
                 &:hover,
                 &:focus {
                     color: #b3bac4;
                 }
+            }
+
+            &.arrow {
+                transform: rotateZ(180deg);
             }
         }
     }
@@ -632,10 +661,14 @@ a:focus {
                 margin: 1.7rem;
 
                 & .play-icon {
+                    width: resize(2.6, .8) * 1rem;
+                    height: resize(2.3, .8) * 1rem;
                     margin-left: 1.2rem;
                 }
 
                 & .apple-icon {
+                    width: resize(2, .85) * 1rem;
+                    height: resize(2, .85) * 1rem;
                     margin-bottom: .3rem;
                     margin-left: .3rem;
                 }
@@ -848,7 +881,7 @@ a:focus {
     grid-template-areas: 
         "card-1 card-2 card-3"
         "card-4 card-4 card-4";
-    grid-template-rows: minmax(22rem, 27rem) minmax(30rem, 1fr);
+    grid-template-rows: minmax(22rem, 27rem) minmax(20rem, 1fr);
     grid-template-columns:  repeat(3, 1fr);
     grid-gap: 2rem 0;
 
@@ -915,6 +948,13 @@ a:focus {
 // ==================================
 // TEAM MAIN VIEW END
 // ==================================
+@media (max-width: 1024px) {
+body, html {
+/* height: 100%!important; */
+overflow: auto!important;
+max-height: 100% !important;
+}
+}
 
 
 
