@@ -9,12 +9,45 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 // MIXINS & FUNCTIONS 
 // ==================================
 @mixin respond($breakpoint) {
-    @if $breakpoint == desktop-sm {
-        @media (max-width: 767px) {
+  
+    @if $breakpoint == desktop-xsm {
+      @media (max-width: 575px) {
         @content;
+      }
+    }
+    @if $breakpoint == desktop-sm {
+      @media (max-width: 767px) {
+        @content;
+      }
+    }
+    @if $breakpoint == desktop-md {
+      @media (max-width: 991px) {
+        @content;
+      }
+    }
+    @if $breakpoint == desktop-lg {
+      @media (max-width: 1199px) {
+        @content;
+      }
+    }
+
+    @if $breakpoint == desktop-xl {
+      @media (max-width: 1439px) {
+        @content;
+      }
+    }
+    @if $breakpoint == desktop-xxl {
+      @media (max-width: 1720px) {
+        @content;
+      }
+    }
+
+    @if $breakpoint == desktop-xxxl {
+        @media (max-width: 1900px) {
+          @content;
         }
     }
-}
+  }
 
 // ==================================
 // GENERAL SETTINGS 
@@ -28,7 +61,12 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 }
 
 html {
-    font-size: 62.5%;
+    //font-size: 62.5%;
+    font-size: 67.5%;
+
+    @include respond(desktop-xxl) {
+        font-size: 62.5%;
+    }
 }
 
 body {
@@ -218,6 +256,7 @@ a:focus {
 }
 
 .page-content {
+    min-width: 85rem;
     width: 100%;
     height: 100%;
 }
@@ -288,11 +327,45 @@ a:focus {
           white-space: nowrap;
           left: 50%;
           bottom: -1.1rem;
-          font-size: 1.25rem;
+          font-size: 1.1rem;
           font-weight: 600;
           color: rgba($color: #171717, $alpha: 0.6);
           transform: translate(-50%, 100%);
         }
+
+        // @include respond(desktop-md) {
+        //     &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+        //         display: none;
+        //     }
+        // }
+
+        // @include respond(desktop-lg) {
+        //     &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+        //         display: none;
+        //     }
+        // }
+
+        @include respond(desktop-xl) {
+            &:first-of-type + .bar + .bar + .bar + .bar,
+            &:first-of-type + .bar + .bar + .bar + .bar + .bar {
+                display: none;
+            }
+        }
+
+        @include respond(desktop-xxl) {
+            &:first-of-type + .bar + .bar,
+            &:first-of-type + .bar + .bar + .bar {
+                display: none;
+            }
+        }
+
+        @include respond(desktop-xxxl) {
+            &:first-of-type,
+            &:first-of-type + .bar {
+                display: none;
+            }
+        }
+        
       }
     }
   }
@@ -300,6 +373,7 @@ a:focus {
   // table with header
   .table {
     max-width: 72rem;
+    //max-width: 60%;
     margin: 0;
     height: 100%;
     padding: 0 3rem;
@@ -767,15 +841,16 @@ a:focus {
 .main {
     position: relative;
     padding: 3.2rem;
+    //padding-top: 2rem;
     height: calc(100vh - 16.3rem - 4px);
     //max-height: calc(100vh - 16.3rem);
     display: grid;
     grid-template-areas: 
         "card-1 card-2 card-3"
         "card-4 card-4 card-4";
-    grid-template-rows: 27rem auto;
+    grid-template-rows: minmax(22rem, 27rem) minmax(30rem, 1fr);
     grid-template-columns:  repeat(3, 1fr);
-    grid-gap: 3rem 0;
+    grid-gap: 2rem 0;
 
         & .card-1 {
             grid-area: card-1;
@@ -817,6 +892,7 @@ a:focus {
                 height: auto;
                 padding: 0;
                 h3 {
+                    
                     margin: 0;
                     padding: 0;
                     opacity: 0.96;
@@ -825,6 +901,7 @@ a:focus {
                     line-height: 1.1;
                     letter-spacing: 0.21px;
                     color: #1c1c1c;
+                    white-space: nowrap;
                 }
             }
 
