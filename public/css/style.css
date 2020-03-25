@@ -58,6 +58,17 @@ a:focus {
 .btn.active.focus {
   outline: none; }
 
+.btn-custom-primary {
+  display: inline-block;
+  padding: .5em 2em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.31;
+  border-radius: 18px;
+  background-color: #1a9cfc; }
+  .btn-custom-primary:hover, .btn-custom-primary:focus {
+    color: #fff; }
+
 .btn-custom-white {
   margin: 0 auto;
   display: flex;
@@ -348,6 +359,37 @@ a:focus {
     font-weight: 700;
     margin: 0 .3rem; }
 
+.stars {
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse; }
+  .stars input {
+    display: none; }
+  .stars label {
+    display: block;
+    cursor: pointer;
+    width: 2.5rem;
+    color: #c3c3c3; }
+    .stars label::before {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: relative;
+      display: block;
+      font-size: 2rem;
+      color: #c1c1c1; }
+    .stars label::after {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: absolute;
+      display: block;
+      font-size: 2rem;
+      color: #ffbb41;
+      top: 0;
+      opacity: 0; }
+  .stars label:hover::after, .stars input:checked ~ label::after, .stars label:hover ~ label::after {
+    opacity: 1; }
+
 .sidebar {
   position: relative;
   display: inline-flex;
@@ -520,6 +562,27 @@ a:focus {
         font-size: 1.3rem; }
       .header-top-info:first-of-type + div i {
         font-size: 1.3rem; }
+      .header-top-info-feedback {
+        display: flex;
+        border-radius: 5px;
+        border: solid 1px #e1e1e1;
+        align-items: center; }
+        .header-top-info-feedback span {
+          padding: 0 1.7rem;
+          display: inline-block;
+          font-size: 1.5rem;
+          line-height: 1.33;
+          letter-spacing: -0.15px;
+          color: #000000; }
+        .header-top-info-feedback p {
+          display: inline-block;
+          margin: .7rem 0;
+          padding: 0 1.2rem;
+          border-left: 1px solid #e1e1e1;
+          font-size: 1.1rem;
+          line-height: 1.18;
+          letter-spacing: -0.15px;
+          color: #363636; }
     .header-top a {
       color: #333;
       font-size: 0.001rem;
@@ -913,6 +976,146 @@ a:focus {
           color: #5D5D5D; }
           .teams-single-user .accordion-custom-section.orange .accordion-custom-body-comment-body a {
             white-space: nowrap; }
+
+.feedback-give {
+  position: relative;
+  padding: 3.9rem 3.65rem;
+  height: calc(100vh - 16.3rem - 4px);
+  display: grid;
+  grid-template-areas: "card-1 card-2";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .feedback-give-select {
+    padding-left: 4rem;
+    padding-right: 1rem; }
+    .feedback-give-select-header .welcome {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.33;
+      letter-spacing: -0.05px;
+      color: #333333; }
+      .feedback-give-select-header .welcome-secondary-text {
+        display: block;
+        font-size: 2.2rem;
+        line-height: 1.32;
+        letter-spacing: -0.15px;
+        color: #353535; }
+    .feedback-give-select-header .input-container input {
+      padding-left: 2.5rem;
+      outline: none;
+      width: 30rem;
+      height: 4rem;
+      font-size: 1.5rem;
+      line-height: 1.33;
+      letter-spacing: -0.12px;
+      border-radius: 2rem;
+      border: solid 1px #c5c5c5;
+      background-color: #ffffff;
+      color: #333; }
+      .feedback-give-select-header .input-container input::placeholder {
+        color: #cacaca; }
+    .feedback-give-select-body {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 3.6rem;
+      height: 42.6rem;
+      overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */ }
+      .feedback-give-select-body::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0; }
+      .feedback-give-select-body .person {
+        margin: .5rem;
+        outline: none;
+        padding: 1.5rem 2.3rem .7rem;
+        display: inline-block;
+        width: 12rem;
+        height: 12rem;
+        border: 2px solid #1A9CFC;
+        border-radius: 20px;
+        border-color: transparent; }
+        .feedback-give-select-body .person-img {
+          margin-bottom: .8rem;
+          width: 6.7rem;
+          height: 6.7rem;
+          border-radius: 50%; }
+        .feedback-give-select-body .person-name {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.5;
+          letter-spacing: 0.15px;
+          color: #000; }
+        .feedback-give-select-body .person:hover {
+          border-color: #e7e7e7; }
+        .feedback-give-select-body .person.active {
+          border-color: #1A9CFC; }
+  .feedback-give-rating {
+    text-align: center;
+    border-left: 1px solid #E1E1E1;
+    padding: 0 20%;
+    padding-top: 4.6rem; }
+    .feedback-give-rating-header {
+      text-align: center; }
+      .feedback-give-rating-header p {
+        font-size: 1.65rem;
+        font-weight: 500;
+        line-height: 1.27;
+        letter-spacing: 0.25px;
+        color: #080808; }
+      .feedback-give-rating-header .name {
+        margin-top: .75rem;
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1.21;
+        color: #000000; }
+    .feedback-give-rating-body {
+      margin-top: 4.5rem; }
+      .feedback-give-rating-body .rating-text {
+        margin-bottom: 1rem;
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.1rem;
+        font-weight: 500;
+        line-height: 1.48;
+        color: #1a173b;
+        text-align: center; }
+      .feedback-give-rating-body .stars {
+        justify-content: center;
+        margin-bottom: 6.5rem; }
+        .feedback-give-rating-body .stars label {
+          width: 3.3rem; }
+          .feedback-give-rating-body .stars label:before, .feedback-give-rating-body .stars label:after {
+            font-size: 2.6rem; }
+      .feedback-give-rating-body .input-container label {
+        text-align: left;
+        margin-top: 3.2rem;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0.23px;
+        color: #434343; }
+      .feedback-give-rating-body .input-container input {
+        width: 100%;
+        padding: 1.2rem .05rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.36;
+        letter-spacing: 0.35px;
+        text-align: left;
+        color: #333;
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid #DFE0E2; }
+        .feedback-give-rating-body .input-container input::placeholder {
+          color: rgba(20, 40, 64, 0.3); }
+      .feedback-give-rating-body .btn-custom-primary {
+        margin-top: 5rem;
+        font-size: 1.6rem; }
 
 @media (max-width: 1024px) {
   body,
