@@ -702,7 +702,7 @@ a:focus {
       font-size: 1.2rem; }
     .header-bottom .input {
       margin-right: 0.5rem;
-      padding: 0.6rem 1.6rem;
+      padding: 0.45rem 1.6rem;
       outline: none;
       font-family: Roboto;
       font-weight: 400;
@@ -817,7 +817,7 @@ a:focus {
     letter-spacing: -0.12px;
     color: #363f4e; }
     .teams-people-view .subheader span {
-      margin-left: 0.9rem; }
+      margin-left: 0.3rem; }
   .teams-people-view .panel-body .table-header-fixed thead {
     border-radius: 9px;
     background-color: #f9fafc; }
@@ -837,7 +837,7 @@ a:focus {
   .teams-people-view .panel-body .table-header-fixed tbody tr {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1.5px solid #ededf5; }
+    border-bottom: 1px solid #ededf5; }
   .teams-people-view .panel-body .table-header-fixed td:last-of-type, .teams-people-view .panel-body .table-header-fixed th:last-of-type {
     flex: 0.3 !important; }
   .teams-people-view .panel-body .table-header-fixed td:nth-last-of-type(3), .teams-people-view .panel-body .table-header-fixed td:nth-last-of-type(4), .teams-people-view .panel-body .table-header-fixed th:nth-last-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-last-of-type(4) {
