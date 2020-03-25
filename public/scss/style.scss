@@ -785,7 +785,7 @@ a:focus {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-right: 1.5px solid #f4f5f7;
+    border-right: 1px solid #e1e1e1;
     background-color: #fff;
     z-index: 200;
 
@@ -866,7 +866,7 @@ a:focus {
       }
 
       i {
-        font-size: 2.4rem;
+        font-size: 2.790rem;
         color: #1a9cfc;
       }
     }
@@ -902,6 +902,7 @@ a:focus {
         padding: 0.2rem 0;
         width: 100%;
         &-link {
+          font-weight: 400;
           display: inline-block;
           padding: 0.9rem 1.2rem;
           width: 100%;
@@ -954,6 +955,12 @@ a:focus {
           margin-bottom: 0.3rem;
           margin-left: 0.3rem;
         }
+
+        & .play-icon,
+        & .apple-icon {
+          width: 2.2rem;
+          height: 2.2rem;
+        }
       }
     }
   }
@@ -966,7 +973,7 @@ a:focus {
     width: 2.8rem;
     height: 2.8rem;
     position: absolute;
-    top: 4.55rem;
+    top: 4.7rem;
     right: 0;
     transform: translate(50%, -100%);
     border: solid 1px #e1e1e1;
@@ -1067,6 +1074,7 @@ a:focus {
     margin-top: 0.7rem;
     font-size: 1.3rem;
     line-height: 1.38;
+    font-weight: 400;
     letter-spacing: -0.13px;
     color: #9699a6;
   }
@@ -1188,7 +1196,7 @@ a:focus {
 // TEAM MAIN VIEW START
 // ==================================
 .teams-main-view {
-  position: relative;
+  //position: relative;
   padding: 3.2rem;
   //padding-top: 2rem;
   height: calc(100vh - 16.3rem - 4px);
@@ -1212,33 +1220,18 @@ a:focus {
   }
 
   & .card-3 {
-    padding-left: 1.2rem;
     grid-area: card-3;
 
     & .graph-card {
       &-body {
         padding-right: 1.8rem;
-      }
 
-
-      @include respond(desktop-xl) {
-        &:first-of-type + .bar + .bar + .bar + .bar,
-        &:first-of-type + .bar + .bar + .bar + .bar + .bar {
-          display: none;
-        }
+        
       }
 
       @include respond(desktop-xxl) {
-        &:first-of-type + .bar + .bar,
-        &:first-of-type + .bar + .bar + .bar {
-          display: none;
-        }
-      }
-
-      @include respond(desktop-xxxl) {
-        &:first-of-type,
-        &:first-of-type + .bar {
-          display: none;
+        &:first-child + .bar  {
+          background-color: red!important;
         }
       }
     }
@@ -1250,10 +1243,6 @@ a:focus {
     overflow-y: auto;
   }
 
-  & .card-5 {
-    grid-area: card-5;
-    border-top: 1px solid #e1e1e1;
-  }
 
   & .graph-card {
     padding: 2.7rem;
@@ -1278,6 +1267,30 @@ a:focus {
       padding: 2.2rem 1.7rem;
       padding-right: 2.8rem;
       height: calc(100% - 4.6rem);
+
+      .bar {
+        
+      @include respond(desktop-xl) {
+        &:first-of-type + .bar + .bar + .bar + .bar,
+        &:first-of-type + .bar + .bar + .bar + .bar + .bar {
+          display: none;
+        }
+      }
+
+      @include respond(desktop-xxl) {
+        &:first-of-type + .bar + .bar,
+        &:first-of-type + .bar + .bar + .bar {
+          display: none;
+        }
+      }
+
+      @include respond(desktop-xxxl) {
+        &:first-of-type,
+        &:first-of-type + .bar {
+          display: none;
+        }
+      }
+      }
     }
   }
 }
@@ -1374,8 +1387,8 @@ a:focus {
         &-col-1 {
           & img {
             margin-right: 1.5rem;
-            width: 4.5rem;
-            height: 4.5rem;
+            width: 4rem;
+            height: 4rem;
             border-radius: 50%;
           }
           & .name {
@@ -1385,6 +1398,7 @@ a:focus {
             letter-spacing: -0.16px;
             color: #293446;
             & span {
+              margin-top: .1rem;
               display: block;
               font-size: 1.2rem;
               font-weight: 500;

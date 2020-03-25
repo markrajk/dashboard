@@ -472,7 +472,7 @@ a:focus {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-right: 1.5px solid #f4f5f7;
+    border-right: 1px solid #e1e1e1;
     background-color: #fff;
     z-index: 200; }
     .sidebar-main-top, .sidebar-main-bottom {
@@ -528,7 +528,7 @@ a:focus {
         line-height: 1.33;
         color: #333333; }
       .sidebar-menu-header i {
-        font-size: 2.4rem;
+        font-size: 2.790rem;
         color: #1a9cfc; }
     .sidebar-menu .input-container {
       padding: 0 2.4rem; }
@@ -552,6 +552,7 @@ a:focus {
         padding: 0.2rem 0;
         width: 100%; }
         .sidebar-menu-list-item-link {
+          font-weight: 400;
           display: inline-block;
           padding: 0.9rem 1.2rem;
           width: 100%;
@@ -587,6 +588,9 @@ a:focus {
           height: 1.7rem;
           margin-bottom: 0.3rem;
           margin-left: 0.3rem; }
+        .sidebar-menu-footer .btn-custom-white .play-icon, .sidebar-menu-footer .btn-custom-white .apple-icon {
+          width: 2.2rem;
+          height: 2.2rem; }
   .sidebar-menu-toggle {
     transform: rotateZ(0);
     display: flex;
@@ -595,7 +599,7 @@ a:focus {
     width: 2.8rem;
     height: 2.8rem;
     position: absolute;
-    top: 4.55rem;
+    top: 4.7rem;
     right: 0;
     transform: translate(50%, -100%);
     border: solid 1px #e1e1e1;
@@ -663,6 +667,7 @@ a:focus {
     margin-top: 0.7rem;
     font-size: 1.3rem;
     line-height: 1.38;
+    font-weight: 400;
     letter-spacing: -0.13px;
     color: #9699a6; }
   .header-bottom {
@@ -738,7 +743,6 @@ a:focus {
     border-bottom: 1px solid #ccc; }
 
 .teams-main-view {
-  position: relative;
   padding: 3.2rem;
   height: calc(100vh - 16.3rem - 4px);
   display: grid;
@@ -753,26 +757,16 @@ a:focus {
     border-left: 1px solid #e1e1e1;
     border-right: 1px solid #e1e1e1; }
   .teams-main-view .card-3 {
-    padding-left: 1.2rem;
     grid-area: card-3; }
     .teams-main-view .card-3 .graph-card-body {
       padding-right: 1.8rem; }
-    @media (max-width: 1439px) {
-      .teams-main-view .card-3 .graph-card:first-of-type + .bar + .bar + .bar + .bar, .teams-main-view .card-3 .graph-card:first-of-type + .bar + .bar + .bar + .bar + .bar {
-        display: none; } }
     @media (max-width: 1720px) {
-      .teams-main-view .card-3 .graph-card:first-of-type + .bar + .bar, .teams-main-view .card-3 .graph-card:first-of-type + .bar + .bar + .bar {
-        display: none; } }
-    @media (max-width: 1900px) {
-      .teams-main-view .card-3 .graph-card:first-of-type, .teams-main-view .card-3 .graph-card:first-of-type + .bar {
-        display: none; } }
+      .teams-main-view .card-3 .graph-card:first-child + .bar {
+        background-color: red !important; } }
   .teams-main-view .card-4 {
     grid-area: card-4;
     border-top: 1px solid #e1e1e1;
     overflow-y: auto; }
-  .teams-main-view .card-5 {
-    grid-area: card-5;
-    border-top: 1px solid #e1e1e1; }
   .teams-main-view .graph-card {
     padding: 2.7rem;
     padding-top: 1.8rem; }
@@ -793,6 +787,15 @@ a:focus {
       padding: 2.2rem 1.7rem;
       padding-right: 2.8rem;
       height: calc(100% - 4.6rem); }
+      @media (max-width: 1439px) {
+        .teams-main-view .graph-card-body .bar:first-of-type + .bar + .bar + .bar + .bar, .teams-main-view .graph-card-body .bar:first-of-type + .bar + .bar + .bar + .bar + .bar {
+          display: none; } }
+      @media (max-width: 1720px) {
+        .teams-main-view .graph-card-body .bar:first-of-type + .bar + .bar, .teams-main-view .graph-card-body .bar:first-of-type + .bar + .bar + .bar {
+          display: none; } }
+      @media (max-width: 1900px) {
+        .teams-main-view .graph-card-body .bar:first-of-type, .teams-main-view .graph-card-body .bar:first-of-type + .bar {
+          display: none; } }
 
 .teams-people-view {
   position: relative;
@@ -841,8 +844,8 @@ a:focus {
     flex: 0.56 !important; }
   .teams-people-view .panel-body .table-header-fixed-col-1 img {
     margin-right: 1.5rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%; }
   .teams-people-view .panel-body .table-header-fixed-col-1 .name {
     font-size: 1.55rem;
@@ -851,6 +854,7 @@ a:focus {
     letter-spacing: -0.16px;
     color: #293446; }
     .teams-people-view .panel-body .table-header-fixed-col-1 .name span {
+      margin-top: .1rem;
       display: block;
       font-size: 1.2rem;
       font-weight: 500;
