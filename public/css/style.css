@@ -410,7 +410,8 @@ a:focus {
     line-height: 1.35;
     color: #009aff;
     border-radius: 8px;
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    white-space: nowrap; }
     .settings-sidenav-item i {
       font-size: 2rem;
       text-align: center;
@@ -1242,36 +1243,139 @@ a:focus {
   height: calc(100vh - 16.3rem - 4px);
   display: flex;
   align-items: baseline; }
-  .team-settings-members-active .settings-content-links {
-    border-bottom: 1.5px solid #F1F1F1;
-    margin-bottom: 2.5rem; }
-    .team-settings-members-active .settings-content-links-item {
-      position: relative;
-      display: inline-block;
-      padding: 0  2rem .95rem;
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 1.31;
-      letter-spacing: normal;
-      color: #333; }
-      .team-settings-members-active .settings-content-links-item.active {
-        font-weight: 500; }
-      .team-settings-members-active .settings-content-links-item.active::after {
-        position: absolute;
-        bottom: -1.5px;
-        left: 0;
+  .team-settings-members-active .settings-content {
+    width: 100%; }
+    .team-settings-members-active .settings-content-links {
+      margin-left: -1rem;
+      border-bottom: 1.5px solid #F1F1F1;
+      margin-bottom: 2.5rem; }
+      .team-settings-members-active .settings-content-links-item {
+        position: relative;
         display: inline-block;
-        content: "";
-        width: 100%;
-        height: 1.5px;
-        background-color: #009AFF; }
-  .team-settings-members-active .settings-content h3 {
-    margin-bottom: 2.6rem;
-    padding-left: 1rem;
-    font-size: 2.2rem;
-    font-weight: 500;
-    line-height: 1.32;
-    color: #333; }
+        padding: 0  2rem .95rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.31;
+        letter-spacing: normal;
+        color: #333; }
+        .team-settings-members-active .settings-content-links-item.active {
+          font-weight: 500; }
+        .team-settings-members-active .settings-content-links-item.active::after {
+          position: absolute;
+          bottom: -1.5px;
+          left: 0;
+          display: inline-block;
+          content: "";
+          width: 100%;
+          height: 1.5px;
+          background-color: #009AFF; }
+    .team-settings-members-active .settings-content h3 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.32;
+      color: #333; }
+    .team-settings-members-active .settings-content .subheader-list {
+      display: flex;
+      justify-content: flex-end; }
+      .team-settings-members-active .settings-content .subheader-list-item {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.33;
+        color: #1f76c2; }
+    .team-settings-members-active .settings-content .subheader-inputs {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .team-settings-members-active .settings-content .subheader-inputs .input-container {
+        position: relative; }
+        .team-settings-members-active .settings-content .subheader-inputs .input-container input {
+          padding: .5rem 1.2rem;
+          outline: none;
+          width: 28rem;
+          font-size: 1.5rem;
+          line-height: 1.33;
+          color: #333;
+          border-radius: 15px;
+          border: solid 1px #c4c4c4; }
+          .team-settings-members-active .settings-content .subheader-inputs .input-container input::placeholder {
+            color: #a9a9a9; }
+        .team-settings-members-active .settings-content .subheader-inputs .input-container i {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-70%, -50%);
+          font-size: 1.5rem;
+          color: #a9a9a9; }
+      .team-settings-members-active .settings-content .subheader-inputs .btn-custom-primary {
+        font-size: 1.4rem;
+        padding: .6rem 2rem; }
+    .team-settings-members-active .settings-content .panel {
+      margin-top: 2.6rem; }
+      .team-settings-members-active .settings-content .panel-body {
+        border-radius: 10px;
+        border: solid 1px #e6e9ef; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed thead {
+          border-top-left-radius: 9px;
+          border-top-right-radius: 9px;
+          background-color: #f3f4f7; }
+          .team-settings-members-active .settings-content .panel-body .table-header-fixed thead th {
+            padding: 1.8rem 0;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.31;
+            color: #333333; }
+            .team-settings-members-active .settings-content .panel-body .table-header-fixed thead th i {
+              margin-left: 0.6rem;
+              transform: rotateZ(-90deg); }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed tbody {
+          max-height: calc(100vh - 11rem - 16rem - 8rem); }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed tr {
+          padding: 0 1.7rem; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed tbody tr {
+          padding-top: 2rem;
+          padding-bottom: 2rem; }
+          .team-settings-members-active .settings-content .panel-body .table-header-fixed tbody tr:not(:last-of-type) {
+            border-bottom: 1.5px solid #ededf5; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed td:first-of-type, .team-settings-members-active .settings-content .panel-body .table-header-fixed th:first-of-type {
+          flex: 1.2 !important; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed td:last-of-type, .team-settings-members-active .settings-content .panel-body .table-header-fixed th:last-of-type {
+          flex: 0.3 !important; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-1 .initials {
+          margin-right: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 3rem;
+          height: 3rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 1.33;
+          color: #fff;
+          border-radius: 50%;
+          background-color: #7850ce; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-1 .name a {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 1.33;
+          color: #009aff; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-1 .name span {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #333333; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-2, .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-3 {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #333; }
+        .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-4 {
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.38;
+          color: #009aff; }
+          .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-4 i {
+            font-size: 1.4rem;
+            padding-right: .5rem; }
 
 @media (max-width: 1024px) {
   body,

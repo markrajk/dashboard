@@ -7,7 +7,7 @@
     <title>Dashboard | Settings | Active members</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo:500&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="../public/css/bootstrap.css">
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
@@ -137,11 +137,281 @@
                         <a href="#" class="settings-content-links-item">Invite new members</a>
                     </div>
                     <h3>Active Members</h3>
-                    <p class="subheader-list ml-auto">
+                    <p class="subheader-list">
                         <a href="#" class="subheader-list-item">Manage Teams</a>
                         <a href="#" class="subheader-list-item">Manage teams</a>
                         <a href="#" class="subheader-list-item">Download CSV</a>
                     </p>
+                    <div class="subheader-inputs">
+                        <div class="input-container">
+                            <i class="icon-c-search"></i>
+                            <input type="text" id="name" placeholder="Search by name">
+                        </div>
+                        <a href="#" class="btn-custom-primary">Invite a new member</a>
+                    </div>
+                    <div class="panel panel-default card-2">
+                        <div class="panel-body">
+                          <table class="table-header-fixed flex-table">
+                            <thead>
+                              <tr>
+                                  <th>Name</th>
+                                  <th>Job title</th>
+                                  <th>Joined</th>
+                                  <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <td class="table-header-fixed-col-1">
+                                      <span class="initials">M</span>
+                                      <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                  </td>
+                                  <td class="table-header-fixed-col-2">
+                                    <p>Super cleaner</p>
+                                  </td>
+                                  <td class="table-header-fixed-col-3">
+                                    <p>7 days ago</p>
+                                  </td>
+                                  <td class="table-header-fixed-col-4">
+                                    <a href="#">
+                                        <i class="fas fa-trash"></i>
+                                        DELETE
+                                    </a>
+                                  </td>
+                              </tr>
+
+                              <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-header-fixed-col-1">
+                                    <span class="initials">M</span>
+                                    <p class="name"><a href="#">Max Matinpalo</a> <span>maxmatinpalo@me.com</span></p>
+                                </td>
+                                <td class="table-header-fixed-col-2">
+                                  <p>Super cleaner</p>
+                                </td>
+                                <td class="table-header-fixed-col-3">
+                                  <p>7 days ago</p>
+                                </td>
+                                <td class="table-header-fixed-col-4">
+                                  <a href="#">
+                                      <i class="fas fa-trash"></i>
+                                      DELETE
+                                  </a>
+                                </td>
+                            </tr>
+    
+                            </tbody>
+                          </table>
+                        </div>
+                      </div> 
                 </div>
             </main>
         </div>

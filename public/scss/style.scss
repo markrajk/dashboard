@@ -650,6 +650,7 @@ a:focus {
     color: #009aff;
     border-radius: 8px;
     transition: all .2s ease-in-out;
+    white-space: nowrap;
 
     & i {
       font-size: 2rem;
@@ -1941,8 +1942,9 @@ a:focus {
   align-items: baseline;
 
   & .settings-content {
-
+    width: 100%;
     &-links {
+      margin-left: -1rem;
       border-bottom: 1.5px solid #F1F1F1;
       margin-bottom: 2.5rem;
       &-item {
@@ -1973,12 +1975,175 @@ a:focus {
     }
 
     & h3 {
-      margin-bottom: 2.6rem;
-      padding-left: 1rem;
+      // margin-bottom: 2.6rem;
+      //padding-left: 1rem;
       font-size: 2.2rem;
       font-weight: 500;
       line-height: 1.32;
       color: #333;
+    }
+
+    & .subheader-list {
+      display: flex;
+      justify-content: flex-end;
+
+      &-item {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.33;
+        color: #1f76c2;
+      }
+    }
+
+    & .subheader-inputs {
+      margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .input-container {
+          position: relative;
+
+        & input {
+          padding: .5rem 1.2rem;
+          outline: none;
+          width: 28rem;
+          font-size: 1.5rem;
+          line-height: 1.33;
+          color: #333;
+          border-radius: 15px;
+          border: solid 1px #c4c4c4;
+
+          &::placeholder {
+            color: #a9a9a9;
+          }
+        }
+
+        & i {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-70%, -50%);
+          font-size: 1.5rem;
+          color: #a9a9a9;
+        }
+      }
+
+      & .btn-custom-primary {
+        font-size: 1.4rem;
+        padding: .6rem 2rem;
+      }
+    }
+
+    & .panel {
+      margin-top: 2.6rem;
+      &-body {
+        border-radius: 10px;
+        border: solid 1px #e6e9ef;
+        & .table-header-fixed {
+          & thead {
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            background-color: #f3f4f7;
+  
+            & th {
+              padding: 1.8rem 0;
+              font-size: 1.6rem;
+              font-weight: 700;
+              line-height: 1.31;
+              color: #333333;;
+  
+              & i {
+                margin-left: 0.6rem;
+                transform: rotateZ(-90deg);
+              }
+            }
+          }
+  
+          & tbody {
+            max-height: calc(100vh - 11rem - 16rem - 8rem);
+          }
+  
+          & tr {
+            padding: 0 1.7rem;
+          }
+  
+          & tbody {
+            & tr {
+              padding-top: 2rem;
+              padding-bottom: 2rem;
+              
+              &:not(:last-of-type) {
+                border-bottom: 1.5px solid #ededf5;
+              }
+            }
+          }
+  
+          & td,
+          & th {
+            &:first-of-type {
+              flex: 1.2!important;
+            }
+            &:last-of-type {
+              flex: 0.3 !important;
+            }
+          }
+  
+          &-col-1 {
+            & .initials {
+              margin-right: 1.2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 3rem;
+              height: 3rem;
+              font-size: 1.5rem;
+              font-weight: 500;
+              line-height: 1.33;
+              color: #fff;
+              border-radius: 50%;
+              background-color: #7850ce;
+            }
+            & .name {
+              
+              & a {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.33;
+                color: #009aff;
+              }
+              & span {
+                display: block;
+                font-size: 1.4rem;
+                line-height: 1.36;
+                color: #333333;
+              }
+            }
+          }
+
+          &-col-2,
+          &-col-3 {
+            font-size: 1.4rem;
+            line-height: 1.36;
+            color: #333;
+          }
+
+          &-col-4 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.38;
+            color: #009aff;
+
+            & i {
+              font-size: 1.4rem;
+              padding-right: .5rem;
+            }
+          }
+
+
+
+        }
+      }
     }
   }
 }
