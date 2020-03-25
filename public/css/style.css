@@ -987,8 +987,10 @@ a:focus {
   grid-template-columns: 1fr 1fr; }
   .feedback-give-select {
     padding-left: 4rem;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    padding-top: 2rem; }
     .feedback-give-select-header img {
+      margin-top: -2rem;
       margin-right: 1.8rem; }
     .feedback-give-select-header .welcome {
       display: inline-block;
@@ -1005,7 +1007,8 @@ a:focus {
         color: #353535; }
     .feedback-give-select-header .input-container {
       display: inline-block;
-      position: relative; }
+      position: relative;
+      margin-top: 2.3rem; }
       .feedback-give-select-header .input-container input {
         padding-left: 2.5rem;
         outline: none;

@@ -1563,13 +1563,16 @@ a:focus {
   &-select {
     padding-left: 4rem;
     padding-right: 1rem;
+    padding-top: 2rem;
     &-header {
 
       & img {
+        margin-top: -2rem;
         margin-right: 1.8rem;
       }
 
       & .welcome {
+        //margin-bottom: -3rem;
         display: inline-block;
         font-size: 1.8rem;
         font-weight: 500;
@@ -1589,6 +1592,7 @@ a:focus {
       & .input-container {
         display: inline-block;
         position: relative;
+        margin-top: 2.3rem;
 
         & input {
           padding-left: 2.5rem;
