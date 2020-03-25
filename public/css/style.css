@@ -393,6 +393,36 @@ a:focus {
   .stars label:hover::after, .stars input:checked ~ label::after, .stars label:hover ~ label::after {
     opacity: 1; }
 
+.settings-sidenav {
+  margin-right: 5rem; }
+  .settings-sidenav h2 {
+    margin-bottom: 2.6rem;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #393939; }
+  .settings-sidenav-item {
+    margin-bottom: .5rem;
+    padding: .8rem 1.9rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    line-height: 1.35;
+    color: #009aff;
+    border-radius: 8px;
+    transition: all .2s ease-in-out; }
+    .settings-sidenav-item i {
+      font-size: 2rem;
+      text-align: center;
+      width: 2.5rem;
+      margin-right: 2rem; }
+    .settings-sidenav-item:hover {
+      color: #fff;
+      background-color: rgba(0, 154, 255, 0.5); }
+    .settings-sidenav-item.active {
+      color: #fff;
+      background-color: #009aff; }
+
 .sidebar {
   position: relative;
   display: inline-flex;
@@ -1150,35 +1180,6 @@ a:focus {
   height: calc(100vh - 16.3rem - 4px);
   display: flex;
   align-items: baseline; }
-  .team-settings-general .settings-sidenav {
-    margin-right: 5rem; }
-    .team-settings-general .settings-sidenav h2 {
-      margin-bottom: 2.6rem;
-      font-size: 3rem;
-      font-weight: 500;
-      line-height: 1.3;
-      color: #393939; }
-    .team-settings-general .settings-sidenav-item {
-      margin-bottom: .5rem;
-      padding: .8rem 1.9rem;
-      display: flex;
-      align-items: center;
-      font-size: 1.7rem;
-      line-height: 1.35;
-      color: #009aff;
-      border-radius: 8px;
-      transition: all .2s ease-in-out; }
-      .team-settings-general .settings-sidenav-item i {
-        font-size: 2rem;
-        text-align: center;
-        width: 2.5rem;
-        margin-right: 2rem; }
-      .team-settings-general .settings-sidenav-item:hover {
-        color: #fff;
-        background-color: rgba(0, 154, 255, 0.5); }
-      .team-settings-general .settings-sidenav-item.active {
-        color: #fff;
-        background-color: #009aff; }
   .team-settings-general .settings-content-links {
     border-bottom: 1.5px solid #F1F1F1;
     margin-bottom: 2.5rem; }
@@ -1187,10 +1188,12 @@ a:focus {
       display: inline-block;
       padding: 0  2rem .95rem;
       font-size: 1.6rem;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.31;
       letter-spacing: normal;
       color: #333; }
+      .team-settings-general .settings-content-links-item.active {
+        font-weight: 500; }
       .team-settings-general .settings-content-links-item.active::after {
         position: absolute;
         bottom: -1.5px;
@@ -1232,6 +1235,43 @@ a:focus {
     margin-left: 1rem;
     font-size: 1.4rem;
     padding: .8em 2em; }
+
+.team-settings-members-active {
+  position: relative;
+  padding: 3.9rem 3.65rem;
+  height: calc(100vh - 16.3rem - 4px);
+  display: flex;
+  align-items: baseline; }
+  .team-settings-members-active .settings-content-links {
+    border-bottom: 1.5px solid #F1F1F1;
+    margin-bottom: 2.5rem; }
+    .team-settings-members-active .settings-content-links-item {
+      position: relative;
+      display: inline-block;
+      padding: 0  2rem .95rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.31;
+      letter-spacing: normal;
+      color: #333; }
+      .team-settings-members-active .settings-content-links-item.active {
+        font-weight: 500; }
+      .team-settings-members-active .settings-content-links-item.active::after {
+        position: absolute;
+        bottom: -1.5px;
+        left: 0;
+        display: inline-block;
+        content: "";
+        width: 100%;
+        height: 1.5px;
+        background-color: #009AFF; }
+  .team-settings-members-active .settings-content h3 {
+    margin-bottom: 2.6rem;
+    padding-left: 1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.32;
+    color: #333; }
 
 @media (max-width: 1024px) {
   body,

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Teams | Single user</title>
+    <title>Dashboard | Settings | Active members</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo:500&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -107,15 +107,15 @@
         </div>
 
         <div class="page-content">
-            <main class="team-settings-general">
+            <main class="team-settings-members-active">
                 <div class="settings-sidenav">
                     <h2 class="settings-sidenav-title">Team Settings</h2>
-                    <a href="../team-settings-general/index.html" class="settings-sidenav-item active">
+                    <a href="../team-settings-general/index.html" class="settings-sidenav-item">
                         <i class="icon-c-settings"></i>
                         General
                     </a>
 
-                    <a href="../team-settings-members-active/index.html" class="settings-sidenav-item">
+                    <a href="../team-settings-members-active/index.html" class="settings-sidenav-item active">
                         <i class="icon-c-people"></i>
                         Memebrs
                     </a>
@@ -133,26 +133,15 @@
 
                 <div class="settings-content">
                     <div class="settings-content-links">
-                        <a href="#" class="settings-content-links-item active">General</a>
-                        <a href="#" class="settings-content-links-item">Team picture</a>
+                        <a href="#" class="settings-content-links-item active">Active members</a>
+                        <a href="#" class="settings-content-links-item">Invite new members</a>
                     </div>
-                    <h3>General</h3>
-                    <div class="input-container">
-                        <label for="team-n">Team name</label>
-                        <input type="text" id="team-n" placeholder="Enter team name...">
-                    </div>
-
-                    <div class="input-container">
-                        <label for="team-d">Team description</label>
-                        <input type="text" id="team-d" placeholder="Describe your team...">
-                    </div>
-
-                    <div class="input-container">
-                        <label for="team-l">Team leader</label>
-                        <input type="text" id="team-l" placeholder="Team leader's name...">
-                    </div>
-
-                    <a href="#" class="btn-custom-primary gray">Save changes</a>
+                    <h3>Active Members</h3>
+                    <p class="subheader-list ml-auto">
+                        <a href="#" class="subheader-list-item">Manage Teams</a>
+                        <a href="#" class="subheader-list-item">Manage teams</a>
+                        <a href="#" class="subheader-list-item">Download CSV</a>
+                    </p>
                 </div>
             </main>
         </div>
