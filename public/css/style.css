@@ -1408,6 +1408,9 @@ a:focus {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #333; }
+        @media (max-width: 1199px) {
+          .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-3, .team-settings-members-active .settings-content .panel-body .table-header-fixed th:nth-of-type(3) {
+            display: none; } }
         .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-4 {
           font-size: 1.3rem;
           font-weight: 500;
@@ -1416,6 +1419,9 @@ a:focus {
           .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-4 i {
             font-size: 1.4rem;
             padding-right: .5rem; }
+          @media (max-width: 991px) {
+            .team-settings-members-active .settings-content .panel-body .table-header-fixed-col-4 span {
+              display: none; } }
 
 .feedback-settings-collegial {
   position: relative;
