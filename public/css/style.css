@@ -1454,10 +1454,12 @@ a:focus {
       color: #333; }
     .feedback-settings-collegial .settings-content .settings-list-wrapper {
       display: grid;
-      align-items: flex-start;
-      grid-template-columns: auto 1fr; }
+      align-items: baseline;
+      grid-template-columns: auto 1fr;
+      grid-gap: 0 .5rem; }
       .feedback-settings-collegial .settings-content .settings-list-wrapper span {
-        padding: 0 .6rem;
+        margin-top: -.2rem;
+        align-self: flex-start;
         margin-right: 1rem;
         display: inline-flex;
         justify-content: center;
@@ -1471,6 +1473,9 @@ a:focus {
         border: 1.8px solid #00a1e6;
         border-radius: 50%;
         border-radius: 12px; }
+        .feedback-settings-collegial .settings-content .settings-list-wrapper span:nth-of-type(even) {
+          margin: 0;
+          margin-top: -.2rem; }
     .feedback-settings-collegial .settings-content .settings-list {
       margin-bottom: 3rem; }
       .feedback-settings-collegial .settings-content .settings-list-item {
