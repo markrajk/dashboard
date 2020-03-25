@@ -15,7 +15,9 @@ function closeMenuOnSmall() {
     if(window.innerWidth < 991) {
         sidenavMenu.classList.add('sidebar-menu-close-anim');
         sidenavMenuToggleIcon.classList.add('sidebar-menu-close-icon-rotate');
-        console.log('<991')
+    }else {
+        sidenavMenu.classList.remove('sidebar-menu-close-anim');
+        sidenavMenuToggleIcon.classList.remove('sidebar-menu-close-icon-rotate');
     }
 }
 
