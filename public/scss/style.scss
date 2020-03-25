@@ -1553,9 +1553,7 @@ a:focus {
 .feedback-give {
   position: relative;
   padding: 3.9rem 3.65rem;
-  //padding-top: 2rem;
   height: calc(100vh - 16.3rem - 4px);
-  //max-height: calc(100vh - 16.3rem);
   display: grid;
   grid-template-areas:
     "card-1 card-2";
@@ -1566,6 +1564,10 @@ a:focus {
     padding-left: 4rem;
     padding-right: 1rem;
     &-header {
+
+      & img {
+        margin-right: 1.8rem;
+      }
 
       & .welcome {
         display: inline-block;
@@ -1585,6 +1587,8 @@ a:focus {
       }
 
       & .input-container {
+        display: inline-block;
+        position: relative;
 
         & input {
           padding-left: 2.5rem;
@@ -1602,6 +1606,14 @@ a:focus {
           &::placeholder {
             color: #cacaca;
           }
+        }
+
+        & i {
+          font-size: 1.5rem;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-50%, -50%);
         }
       }
     }
