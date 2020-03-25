@@ -1193,7 +1193,7 @@ a:focus {
       color: #333; }
       .team-settings-general .settings-content-links-item.active::after {
         position: absolute;
-        bottom: 0;
+        bottom: -1.5px;
         left: 0;
         display: inline-block;
         content: "";

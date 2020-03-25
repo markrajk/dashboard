@@ -1861,7 +1861,7 @@ a:focus {
 
         &.active::after {
           position: absolute;
-          bottom: 0;
+          bottom: -1.5px;
           left: 0;
           display: inline-block;
           content: "";
