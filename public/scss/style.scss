@@ -718,6 +718,57 @@ a:focus {
   }
 }
 
+// [type="radio"]:checked,
+// [type="radio"]:not(:checked) {
+//     position: absolute;
+//     left: -9999px;
+// }
+// [type="radio"]:checked + label,
+// [type="radio"]:not(:checked) + label
+// {
+//     position: relative;
+//     padding-left: 28px;
+//     cursor: pointer;
+//     line-height: 20px;
+//     display: inline-block;
+//     color: #666;
+// }
+// [type="radio"]:checked + label:before,
+// [type="radio"]:not(:checked) + label:before {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 18px;
+//     height: 18px;
+//     border: 1px solid #ddd;
+//     border-radius: 100%;
+//     background: #fff;
+// }
+// [type="radio"]:checked + label:after,
+// [type="radio"]:not(:checked) + label:after {
+//     content: '';
+//     width: 12px;
+//     height: 12px;
+//     background: #F87DA9;
+//     position: absolute;
+//     top: 4px;
+//     left: 4px;
+//     border-radius: 100%;
+//     -webkit-transition: all 0.2s ease;
+//     transition: all 0.2s ease;
+// }
+// [type="radio"]:not(:checked) + label:after {
+//     opacity: 0;
+//     -webkit-transform: scale(0);
+//     transform: scale(0);
+// }
+// [type="radio"]:checked + label:after {
+//     opacity: 1;
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+// }
+
 // ==================================
 // SIDEBAR START
 // ==================================
@@ -2200,6 +2251,121 @@ a:focus {
 
 
 // ==================================
+// FEEDBACK SETTINGS COLLEGIAL START
+// ==================================
+.feedback-settings-collegial {
+  position: relative;
+  padding: 3.9rem 3.65rem;
+  height: calc(100vh - 16.3rem - 4px);
+  display: flex;
+  align-items: baseline;
+
+  & .settings-content {
+    width: 100%;
+
+    &-links {
+      display: inline-block;
+      margin-left: -1rem;
+      border-bottom: 1.5px solid #F1F1F1;
+      margin-bottom: 2.5rem;
+
+      &-item {
+        position: relative;
+        display: inline-block;
+        padding: 0  2rem .95rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.31;
+        letter-spacing: normal;
+        color: #333;
+
+        &.active {
+          font-weight: 500;
+        }
+
+        &.active::after {
+          position: absolute;
+          bottom: -1.5px;
+          left: 0;
+          display: inline-block;
+          content: "";
+          width: 100%;
+          height: 1.5px;
+          background-color: #009AFF;
+        }
+      }
+    }
+
+    & h3 {
+      margin-bottom: 2.6rem;
+      //padding-left: 1rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.32;
+      color: #333;
+    }
+    & .settings-list-wrapper {
+      display: grid;
+      align-items: flex-start;
+      grid-template-columns: auto 1fr;
+      & span {
+        padding: 0 .6rem;
+        margin-right: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 2.4rem;
+        min-height: 2.4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.36;
+        color: #00a1e6;
+        border: 1.8px solid #00a1e6;
+        border-radius: 50%;
+        border-radius: 12px;
+      }
+    }
+
+    & .settings-list {
+      margin-bottom: 3rem;
+
+      &-item {
+        display: flex;
+        align-items: center;
+
+        &-title {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.36;
+          color: #333;
+        }
+
+        & input,
+        & label {
+          cursor: pointer;
+        }
+
+        & label {
+          //margin-left: .9rem;
+          font-size: 1.55rem;
+          //line-height: 1.55;
+          color: #333;
+        }
+
+        &:not(:first-of-type) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+// ==================================
+// FEEDBACK SETTINGS COLLEGIAL END
+// ==================================
+
+
+
+// ==================================
 // SIGN UP 01 START
 // ==================================
 .sign-up-01 {
@@ -2260,6 +2426,7 @@ a:focus {
 
         &::placeholder {
           font-weight: 400;
+          color: #c9c9c9;
         }
       }
     }

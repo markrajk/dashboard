@@ -1,0 +1,293 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Settings | Active members</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-c-chevron-l"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <!-- <img src="../public/svg/sidenav-logo.svg" alt="logo"> -->
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-people"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item active">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-question"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#">
+                        <i class="icon-c-plus-c"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-c-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Create a new team</a>
+                    <a href="#" class="btn-custom-white">
+                        Get the mobile app
+                        <img src="../public/img/play.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <main class="feedback-settings-collegial">
+                <div class="settings-sidenav">
+                    <h2 class="settings-sidenav-title">Team Settings</h2>
+                    <a href="../team-settings-general/index.html" class="settings-sidenav-item">
+                        <i class="icon-c-settings"></i>
+                        General
+                    </a>
+
+                    <a href="../team-settings-members-active/index.html" class="settings-sidenav-item active">
+                        <i class="icon-c-people"></i>
+                        Memebrs
+                    </a>
+
+                    <a href="#" class="settings-sidenav-item">
+                        <i class="icon-c-phone"></i>
+                        Feedback settings
+                    </a>
+
+                    <a href="#" class="settings-sidenav-item">
+                        <i class="icon-c-bars"></i>
+                        Rights
+                    </a>
+                </div>
+
+                <div class="settings-content">
+                    <div class="settings-content-links">
+                        <a href="#" class="settings-content-links-item active">Active members</a>
+                        <a href="#" class="settings-content-links-item">Invite new members</a>
+                    </div>
+                    <h3>Feedback settings</h3>
+
+                  <div class="settings-list-wrapper">
+                    <span>1</span>
+                    <ul class="settings-list">
+                    <li class="settings-list-item">
+                      <p class="settings-list-item-title">
+                        People in this team are requested to give their boss feedback at least
+                      </p>
+                    </li>
+                    <li class="settings-list-item">
+                     <div class="pretty p-default p-round">
+                        <input type="radio" name="group-1" id="group-1-1">
+                      <div class="state p-primary-o">
+                        <label for="group-1-1">Weekly</label>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="settings-list-item">
+                     <div class="pretty p-default p-round">
+                        <input type="radio" name="group-1" id="group-1-2" checked>
+                      <div class="state p-primary-o">
+                        <label for="group-1-2">Every second week</label>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-1" id="group-1-3">
+                      <div class="state p-primary-o">
+                        <label for="group-1-3">Monthly</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-1" id="group-1-4">
+                      <div class="state p-primary-o">
+                        <label for="group-1-4">Never</label>
+                      </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                    <span>1A</span>
+                    <ul class="settings-list">
+                    <li class="settings-list-item">
+                      <p class="settings-list-item-title">
+                        These feedbacks must contain of
+                      </p>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-2" id="group-2-1">
+                      <div class="state p-primary-o">
+                        <label for="group-2-1">At least just a star feedback</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-2" id="group-2-2" checked>
+                      <div class="state p-primary-o">
+                        <label for="group-2-2">Stars + compliment or improvement idea</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-2" id="group-2-3">
+                      <div class="state p-primary-o">
+                        <label for="group-2-3">Stars + both</label>
+                      </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                    <span>2</span>
+                    <ul class="settings-list">
+                    <li class="settings-list-item">
+                      <p class="settings-list-item-title">
+                        People are requested to give certain amount of feedbacks to see their own results
+                      </p>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-3" id="group-3-1">
+                      <div class="state p-primary-o">
+                        <label for="group-3-1">None</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-3" id="group-3-2" checked>
+                      <div class="state p-primary-o">
+                        <label for="group-3-2">At least three feedbacks</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-3" id="group-3-3">
+                      <div class="state p-primary-o">
+                        <label for="group-3-3">At least five feedback</label>
+                      </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                    <span>2A</span>
+                    <ul class="settings-list">
+                    <li class="settings-list-item">
+                      <p class="settings-list-item-title">
+                        These feedbacks must contain of
+                      </p>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-4" id="group-4-1">
+                      <div class="state p-primary-o">
+                        <label for="group-4-1">At least just a star feedback</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-4" id="group-4-2" checked>
+                      <div class="state p-primary-o">
+                        <label for="group-4-2">Stars + compliment or improvement idea</label>
+                      </div>
+                      </div>
+                    </li>
+                    <li class="settings-list-item">
+                      <div class="pretty p-default p-round">
+                        <input type="radio" name="group-4" id="group-4-3">
+                      <div class="state p-primary-o">
+                        <label for="group-4-3">Stars + both</label>
+                      </div>
+                      </div>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>
