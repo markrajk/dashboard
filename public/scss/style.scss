@@ -1673,6 +1673,7 @@ a:focus {
           width: 6.7rem;
           height: 6.7rem;
           border-radius: 50%;
+          box-shadow: 0 0 0 .75px #c9c9c9;
         }
 
         &-name {
@@ -1793,7 +1794,7 @@ a:focus {
 
 
 // ==================================
-// GIVE FEEDBACK START
+// TEAM SETTINGS GENERAL START
 // ==================================
 .team-settings-general {
   position: relative;

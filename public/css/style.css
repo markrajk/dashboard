@@ -1069,7 +1069,8 @@ a:focus {
           margin-bottom: .8rem;
           width: 6.7rem;
           height: 6.7rem;
-          border-radius: 50%; }
+          border-radius: 50%;
+          box-shadow: 0 0 0 .75px #c9c9c9; }
         .feedback-give-select-body .person-name {
           font-size: 1.2rem;
           font-weight: 500;
