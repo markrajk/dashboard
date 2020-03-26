@@ -236,7 +236,6 @@ a:focus {
   .graph-card-body {
     display: flex;
     justify-content: space-between;
-    height: calc(100% - 10rem);
     padding-left: 4.3rem;
     padding-right: 4.3rem;
     padding-bottom: 4.5rem;
@@ -774,7 +773,8 @@ a:focus {
     overflow-y: auto; }
   .teams-main-view .graph-card {
     padding: 2.7rem;
-    padding-top: 1.8rem; }
+    padding-top: 1.8rem;
+    height: 100%; }
     .teams-main-view .graph-card-header {
       height: auto;
       padding: 0; }

@@ -383,7 +383,7 @@ a:focus {
   &-body {
     display: flex;
     justify-content: space-between;
-    height: calc(100% - 10rem);
+    // height: calc(100% - 10rem - 20rem);
     padding-left: 4.3rem;
     padding-right: 4.3rem;
     padding-bottom: 4.5rem;
@@ -1232,8 +1232,6 @@ a:focus {
     & .graph-card {
       &-body {
         padding-right: 1.8rem;
-
-        
       }
 
       @include respond(desktop-xxl) {
@@ -1254,6 +1252,7 @@ a:focus {
   & .graph-card {
     padding: 2.7rem;
     padding-top: 1.8rem;
+    height: 100%;
     &-header {
       height: auto;
       padding: 0;
@@ -1274,6 +1273,7 @@ a:focus {
       padding: 2.2rem 1.7rem;
       padding-right: 2.8rem;
       height: calc(100% - 4.6rem);
+      //height: 100%;
 
       .bar {
         
